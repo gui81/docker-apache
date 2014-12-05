@@ -61,6 +61,7 @@ image.  The following volumes are shared:
 * `/etc/httpd/conf`
 * `/etc/httpd/conf.d`
 * `/etc/httpd/conf.modules.d`
+* `/etc/httpd/ssl`
 * `/etc/httpd/vhosts.d`
 * `/var/www`
 * `/var/log/httpd`
@@ -72,6 +73,7 @@ docker run --name apache -it --rm -p 80:80 -p 443:443 \
     -v /host/apache/conf:/etc/httpd/conf \
     -v /host/apache/conf.d:/etc/httpd/conf.d \
     -v /host/apache/conf.modules.d:/etc/httpd/conf.modules.d \
+    -v /host/apache/ssl:/etc/httpd/ssl \
     -v /host/apache/vhosts.d:/etc/httpd/vhosts.d \
     -v /host/apache/www:/var/www \
     -v /host/apache/log:/var/log/httpd \

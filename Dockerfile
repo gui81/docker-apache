@@ -15,6 +15,7 @@ RUN yum clean all
 VOLUME /etc/httpd/conf
 VOLUME /etc/httpd/conf.d
 VOLUME /etc/httpd/conf.modules.d
+VOLUME /etc/httpd/ssl
 VOLUME /etc/httpd/vhosts.d
 VOLUME /var/www
 VOLUME /var/log/httpd
