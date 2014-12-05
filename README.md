@@ -68,7 +68,7 @@ image.  The following volumes are shared:
 Volumes can be mounted by passing the **'-v'** option to the docker run command.
 The following is an example:
 ```bash
-docker run --name apache -it --rm \
+docker run --name apache -it --rm -p 80:80 -p 443:443 \
     -v /host/apache/conf:/etc/httpd/conf \
     -v /host/apache/conf.d:/etc/httpd/conf.d \
     -v /host/apache/conf.modules.d:/etc/httpd/conf.modules.d \
